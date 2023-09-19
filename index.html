@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>weather</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="search-form">
+        <div class="search-box">
+          <input type="search" id="city-input" placeholder="type city" />
+        </div>
+        <div>
+          <button id="search-btn">search</button>
+        </div>
+        <div>
+          <button id="currentCity-btn">current</button>
+        </div>
+      </form>
+      <h1 id="city">cairo</h1>
+      <ul>
+        <li id="date">fri 13:30</li>
+        <li id="description">sunny</li>
+      </ul>
+      <div class="temprature">
+        <span id="temp">23</span><span id="unit" class="float-degree">°C</span>
+        <div id="description-data">
+          <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
